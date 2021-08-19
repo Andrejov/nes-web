@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { ActivatedRouteSnapshot, RouterModule, RouterStateSnapshot, Routes } from '@angular/router';
+import { DynmapErrorComponent } from 'src/pages/dynmap-error/dynmap-error.component';
 import { HomepageComponent } from 'src/pages/homepage/homepage.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomepageComponent
+  },
+  {
+    path: 'dynerr',
+    component: DynmapErrorComponent
   },
   {
     path: 'discord',
