@@ -1,0 +1,71 @@
+:host
+{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+:host div {
+    display: inline-block;
+}
+
+.logotext
+{
+    $logoglow: rgba(247, 0, 255, 0.315);
+    $logowhite: rgba(255, 255, 255, 0.247);
+
+    color: white;
+    line-height: initial;
+    font-size: 15vh;
+    text-shadow:
+        0 0 7px $logowhite,
+        0 0 10px $logowhite,
+        0 0 21px $logowhite,
+        0 0 42px $logoglow,
+        0 0 82px $logoglow,
+        0 0 92px $logoglow,
+        0 0 102px $logoglow,
+        0 0 151px $logoglow;
+}
+
+.logoentry
+{
+    $logoglow: rgba(247, 0, 255, 0.219);
+    $logowhite: rgba(255, 255, 255, 0.171);
+
+    color: white;
+    line-height: 6vh;
+    font-size: 3.75vh;
+    text-shadow:
+        0 0 7px $logowhite,
+        0 0 10px $logowhite,
+        0 0 21px $logowhite,
+        0 0 42px $logoglow,
+        0 0 82px $logoglow,
+        0 0 92px $logoglow,
+        0 0 102px $logoglow,
+        0 0 151px $logoglow;
+}
+
+.logoentry a
+{
+    border-bottom: 2px dotted;
+    
+    color: inherit;
+    text-decoration: inherit;
+
+    transition: all 0.15s linear;
+
+    &:hover
+    {
+        // font-weight: bold;
+        color:white;
+        border-bottom: 2px solid;
+        // font-size: 4vh;
+        // line-height: 6.4vh;
+    }   
+}
